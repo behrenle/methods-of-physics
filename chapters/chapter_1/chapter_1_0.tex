@@ -1,0 +1,76 @@
+\chapter{Vektorrechnung}
+Für die Physik sind Vektorrechnung für die Beschreibung von Phänomenen existentiell. Im folgenden soll diese schematisch erläutert werden.
+\section{Skalare}
+Ein Skalar ist eine ungerichtete Größe. Beispiele in für Skalare in der Physik sind die Masse, Ladung und die Spannung.
+\section{Vektoren}
+Dagegen sind Vektoren gerichtete Größen, diese werden durch den Betrag (Länge) und einer Richtung beschrieben.  Die Richtung wird in Komponenten, die in die Achsenrichtung des Koordinatensystems zeigen, beschrieben. Zum Beispiel werden in der Physik Geschwindigkeiten, Beschleunigungen oder Kräfte durch Vektoren dargestellt. Besonders im Ortsraum werden Vektoren mit drei Komponenten häufig genutzt.
+Der Ortsvektor beschreibt die Position  eines Massenpunktes in Bezug auf den Ursprung eines beliebigen Koordinatensystems.
+\subsection{Darstellung im kartesischem Koordinatensystem}
+Die Komponenten eines Vektors kann bzgl. des Koordinatensystems die Projektion auf die Achsen des gewählten Koordinatensystems darstellen. Alle Koordinatenachsen sind senkrecht zueinander, sodass für jede Achse eine Komponente definiert ist. (vgl. Rechte-Hand-Regel)
+\subsection{Betrag (Länge) von Vektoren}  
+Der Betrag eines Vektors ist $\vert\vec v\vert$ ist die Wurzel der Summe aus den Quadraten der Komponenten.
+\begin{align*}
+	\left| \vec v \right| = \left| \left(
+	\begin{array}{c}
+	x \\ y \\ z \\
+	\end{array}
+	\right) \right| = \sqrt{x^2 + y^2 + z^2}
+\end{align*}
+\subsection{Addition zweier Vektoren}
+Die Addition oder Subtraktion zweier Vektoren erfolgt komponentenweise. Diese lässt sich leicht grafisch darstellen (Vektorparallelogramm).
+\begin{align*}
+\vec{a}+\vec{b}=
+	\left(\begin{array}{c}
+	a_x \\ a_y \\ a_z \\
+	\end{array}\right)+
+	\left(\begin{array}{c}
+	b_x \\ b_y \\ b_z \\
+	\end{array}\right)=
+	\left(\begin{array}{c}
+	a_x+b_x \\ a_y+b_y \\ a_z+b_z \\
+	\end{array}\right)
+\end{align*}
+Die Subtraktion erfolgt äquivalent zur Addition. Ebenfalls komponentenweise erfolgt die Multiplikation mit einem Skalar.
+\subsection{Skalarprodukt}
+Es gibt mehrere Arten Vektoren zu multiplizieren. Das Skalarprodukt erhält man durch die Summe der Komponentenprodukte. Das Skalarprodukt ist kommutativ und distributiv. Definition:
+\begin{align*}
+		\vec{a} \cdot \vec{b} &= \left| \vec{a}					\right| \cdot \left| \vec{b} \right|				\cdot \cos \alpha = \lambda \\
+\vec{a}\cdot\vec{b}&=
+	\left(\begin{array}{c}
+	a_x \cdot b_x \\ a_y \cdot b_y \\ a_z \cdot 		b_z \\  
+	\end{array}\right)
+	= a_x b_x + a_y b_y + a_z b_z
+\end{align*}
+\subsubsection{Herleitung des Kosinussatzes}
+Der Kosinussatz lässt sich aus dem Skalarporodukt herleiten. Sei $\vec{a} \cdot \vec{b} = \vec{c}$ dann gilt:
+\begin{align*}
+\vec{c}^{2}&=\left|\vec{c}\right|^{2}=\vec{c}\cdot \vec{c}\\
+&=\left(\vec{a}-\vec{b}\right)\left(\vec{a}-\vec{b}\right)\\
+&=\vec{a}^{2}+\vec{b}^{2}-2\vec{a}\vec{b}
+\end{align*}
+Aus der Definition des Skalarproduktes $\left| \vec{a} \right| \cdot \left| \vec{b} \right| \cdot \cos \alpha = \lambda $ folgt:
+\begin{align*}
+c^{2}=a^{2}+b^{2}-2ab\cos \alpha
+\end{align*}
+\subsection{Vektorprodukt}
+Mithilfe des Vektorproduktes (umgs.auch Kreuzprodukt) erhält man aus der Multiplikation zweier Vektoren ein Vektor. Dieser steht senkrecht zu den beiden Ursprungsvektoren.
+\begin{align*}
+\vec{a}\times\vec{b}=
+	\left(\begin{array}{c}
+	a_x \\ a_y \\ a_z \\
+	\end{array}\right)\times
+	\left(\begin{array}{c}
+	b_x \\ b_y \\ b_z \\
+	\end{array}\right)=
+	\left( \begin{array}{c}
+	a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ 			a_x b_y - a_y b_x \\
+	\end{array} \right)
+\end{align*}
+\section{Tensor}
+Der Tensor ist eine Verallgemeinerung für Skalare, Vektoren und Matrizen So wird ein Skalar auch als Tensor (0,0) nullter Ordnung bezeichnet. Ein Vektor (Spaltenvektor) wird als Tensor (1,0) ersten Ranges benannt. Ein Zeilenvektor (Kovektor) wird als Tensor (0,1) verstanden. Die Matrix stellt daher einen Tensor  zweiter Ordnung dar.
+\section{Ebenen}
+Ebenen können mit Vektoren dargestellt werden.
+\subsection{Normalenform}
+Für alle $\vec{x}$ auf einer Ebene gilt $\left( \vec{x}-\vec{p} \right) \cdot \vec{n}=0$, wobei der Vektor $\vec{n}$ der Normalenvektor ist, der senkrecht zur Ebene ist.  $\vec{x}-\vec{p}$ liegt in der Ebene, wenn $\vec{x}$ als Punkt in die Ebene zeigt.
+\subsection{Hesse'sche Normalenform}
+Für alle Orte gilt auf der Ebene gilt: $\vec{x} \cdot  \vec{n}_0=d$. Wobei $\vec{n}_0$ der normierte Normalenvektor $\left| \vec{n}_0 \right| = 1$ ist. Der Vektor $\vec{n}_0$ ist senkrecht zur Ebene und radial zum Ursprung. $d$ ist der kürzeste Abstand der Ebene zum Ursprung. Ebenfalls ist $d$ die Projektion von $\vec{x}$ auf $\vec{n}_0$
